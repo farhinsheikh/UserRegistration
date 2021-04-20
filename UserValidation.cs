@@ -59,5 +59,21 @@ namespace UserRegistrationProblem
                 Console.WriteLine("invalid");
             }
         }
+        public static void MobileNumber()
+        {
+            string regex = "^([0-9]{2}[ ]?)[0-9]{10}$";
+            Console.WriteLine("Enter your Mobile Number");
+            string mobileNo = Console.ReadLine();
+            Regex rg = new Regex(regex);
+            bool result = rg.IsMatch(mobileNo);
+            if (result == true)
+            {
+                Console.WriteLine("valid");
+            }
+            else
+            {
+                Console.WriteLine("invalid");
+            }
+        }
     }
 }

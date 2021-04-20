@@ -10,6 +10,7 @@ namespace UserRegistrationProblem
             UserValidation.FirstName();
             UserValidation.LastName();
             UserValidation.Email();
+            UserValidation.MobileNumber();
         }
     }
 }
