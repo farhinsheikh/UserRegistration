@@ -11,6 +11,7 @@ namespace UserRegistrationProblem
             UserValidation.LastName();
             UserValidation.Email();
             UserValidation.MobileNumber();
+            UserValidation.Password();
         }
     }
 }
