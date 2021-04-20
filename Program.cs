@@ -8,6 +8,7 @@ namespace UserRegistrationProblem
         static void Main(string[] args)
         {
             UserValidation.FirstName();
+            UserValidation.LastName();
         }
     }
 }
