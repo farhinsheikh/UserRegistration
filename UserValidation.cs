@@ -45,7 +45,7 @@ namespace UserRegistrationProblem
        // *****for email******
         public static void Email()
         {
-            string regex = "[a-zA-Z0-9_.]+@[a-zA-Z.]+$";
+            string regex = "^([a-zA-Z0-9])+[._-+]*[0-9a-zA-Z]*[@][a-zA-Z]*([.][a-zA-Z]+){1,2}$";
             Console.WriteLine("Enter your email");
             string email = Console.ReadLine();
             Regex rg = new Regex(regex);
@@ -79,7 +79,7 @@ namespace UserRegistrationProblem
         //*****for password*****
         public static void Password()
         {
-            string regex = "^[a-zA-Z]{8,}$";
+            string regex = "^[A-Za-z0-9]{8,}[$&+,:;=?@#|'<>.-^*()%!]$";
             Console.WriteLine("Enter your Password :");
             string password = Console.ReadLine();
             Regex rg = new Regex(regex);
