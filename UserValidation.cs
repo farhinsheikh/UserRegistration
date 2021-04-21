@@ -45,7 +45,7 @@ namespace UserRegistrationProblem
        // *****for email******
         public static void Email()
         {
-            string regex = "^([a-zA-Z0-9])+[._-+]*[0-9a-zA-Z]*[@][a-zA-Z]*([.][a-zA-Z]+){1,2}$";
+            string regex = "^[a-zA-Z0-9]+([.][a-zA-Z0-9]+)?@[a-zA-Z0-9]+.[a-zA-Z]{2,4}([.][a-zA-Z]{2})?$";
             Console.WriteLine("Enter your email");
             string email = Console.ReadLine();
             Regex rg = new Regex(regex);
